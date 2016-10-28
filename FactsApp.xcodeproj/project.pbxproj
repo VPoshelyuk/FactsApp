@@ -14,6 +14,8 @@
 		E76F4E791D95CD310068BC41 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E76F4E781D95CD310068BC41 /* Images.xcassets */; };
 		E76F4E7C1D95CD310068BC41 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E76F4E7A1D95CD310068BC41 /* LaunchScreen.xib */; };
 		E76F4E881D95CD310068BC41 /* FactsAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E76F4E871D95CD310068BC41 /* FactsAppTests.m */; };
+		E76F4E931D95DDAF0068BC41 /* FactBook.m in Sources */ = {isa = PBXBuildFile; fileRef = E76F4E921D95DDAF0068BC41 /* FactBook.m */; };
+		E76F4E961D9613380068BC41 /* ColorWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = E76F4E951D9613380068BC41 /* ColorWheel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,13 +35,17 @@
 		E76F4E6F1D95CD310068BC41 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E76F4E701D95CD310068BC41 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E76F4E721D95CD310068BC41 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E76F4E731D95CD310068BC41 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E76F4E731D95CD310068BC41 /* ViewController.m */ = {isa = PBXFileReference; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; };
 		E76F4E761D95CD310068BC41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E76F4E781D95CD310068BC41 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E76F4E7B1D95CD310068BC41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		E76F4E811D95CD310068BC41 /* FactsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FactsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E76F4E861D95CD310068BC41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E76F4E871D95CD310068BC41 /* FactsAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FactsAppTests.m; sourceTree = "<group>"; };
+		E76F4E911D95DDAF0068BC41 /* FactBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FactBook.h; path = FactsApp.xcodeproj/../FactBook.h; sourceTree = SOURCE_ROOT; };
+		E76F4E921D95DDAF0068BC41 /* FactBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FactBook.m; path = FactsApp.xcodeproj/../FactBook.m; sourceTree = SOURCE_ROOT; };
+		E76F4E941D9613380068BC41 /* ColorWheel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorWheel.h; sourceTree = "<group>"; };
+		E76F4E951D9613380068BC41 /* ColorWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorWheel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +91,10 @@
 				E76F4E701D95CD310068BC41 /* AppDelegate.m */,
 				E76F4E721D95CD310068BC41 /* ViewController.h */,
 				E76F4E731D95CD310068BC41 /* ViewController.m */,
+				E76F4E911D95DDAF0068BC41 /* FactBook.h */,
+				E76F4E921D95DDAF0068BC41 /* FactBook.m */,
+				E76F4E941D9613380068BC41 /* ColorWheel.h */,
+				E76F4E951D9613380068BC41 /* ColorWheel.m */,
 				E76F4E751D95CD310068BC41 /* Main.storyboard */,
 				E76F4E781D95CD310068BC41 /* Images.xcassets */,
 				E76F4E7A1D95CD310068BC41 /* LaunchScreen.xib */,
@@ -219,8 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E76F4E961D9613380068BC41 /* ColorWheel.m in Sources */,
 				E76F4E741D95CD310068BC41 /* ViewController.m in Sources */,
 				E76F4E711D95CD310068BC41 /* AppDelegate.m in Sources */,
+				E76F4E931D95DDAF0068BC41 /* FactBook.m in Sources */,
 				E76F4E6E1D95CD310068BC41 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +428,7 @@
 				E76F4E8D1D95CD310068BC41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E76F4E8E1D95CD310068BC41 /* Build configuration list for PBXNativeTarget "FactsAppTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +437,7 @@
 				E76F4E901D95CD310068BC41 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

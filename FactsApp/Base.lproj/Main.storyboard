@@ -1,25 +1,83 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKK-5W-XmL">
+                                <rect key="frame" x="43" y="466" width="235" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="235" id="R3T-FG-URJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                <color key="tintColor" red="0.4392156862745098" green="0.74901960784313726" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="КНОПОЧКА"/>
+                                <connections>
+                                    <action selector="showFact" destination="vXZ-lx-hvc" eventType="touchUpInside" id="X2n-c8-EGG"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Братан,а ты знал?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvm-YW-N4h">
+                                <rect key="frame" x="27" y="28" width="174" height="39"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="174" id="QBb-xQ-JOp"/>
+                                    <constraint firstAttribute="height" constant="39" id="nMa-PC-c9z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" red="0.25356450643796147" green="0.4669144210386369" blue="0.98431372549019602" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="An interesting fact goes here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57r-ZE-C2K">
+                                <rect key="frame" x="0.0" y="170" width="320" height="55"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="Wom-S8-mLC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                                <color key="textColor" red="0.2535645064" green="0.46691442100000002" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.3529411764705882" green="0.73333333333333328" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KKK-5W-XmL" secondAttribute="trailing" constant="42" id="0SM-NL-Uw8"/>
+                            <constraint firstItem="xvm-YW-N4h" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="Sjg-kV-IdA"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="KKK-5W-XmL" secondAttribute="bottom" constant="72" id="YCA-cv-Red"/>
+                            <constraint firstItem="xvm-YW-N4h" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="27" id="ZmG-P7-XoG"/>
+                            <constraint firstAttribute="trailing" secondItem="57r-ZE-C2K" secondAttribute="trailing" id="mzm-G4-6eb"/>
+                            <constraint firstItem="57r-ZE-C2K" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="nRa-5V-dFP"/>
+                            <constraint firstItem="KKK-5W-XmL" firstAttribute="top" secondItem="57r-ZE-C2K" secondAttribute="bottom" constant="241" id="ty1-vz-405"/>
+                            <constraint firstItem="KKK-5W-XmL" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="43" id="yxw-bb-8m3"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="factLabel" destination="57r-ZE-C2K" id="Wd6-Ii-t26"/>
+                        <outlet property="funFactButton" destination="KKK-5W-XmL" id="Jqm-Dr-IyQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="202" y="297"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
